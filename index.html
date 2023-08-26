@@ -140,10 +140,10 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
             </div>
-            <div class="row align-items-center">
+            <div class="row ">
                 <div class="col-lg-6">
                     <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="border-left border-primary  pl-4 ml-2">
                         <div class="position-relative mb-4">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                             <h5 class="font-weight-bold mb-1">Master In Computer Software Engineering</h5>
@@ -159,7 +159,7 @@
                         
                     </div>
                 </div>
-                <div class="col-lg-6">
+               <div class="col-lg-6">
                     <h3 class="mb-4">My Expericence</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
@@ -182,12 +182,32 @@
                         </div>
                     </div>
                 </div>
+           
+                
             </div>
         </div>
     </div>
     <!-- Qualification End -->
-
-
+    <style>
+        .skill {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center; /* Center children horizontally */
+            height: 150px; /* Adjust based on your needs */
+        }
+        .skill-name {
+            font-size: 1.5em;
+            text-align: center; /* Center the text */
+        }
+        .skill-logo {
+            width: 110px; /* Set the width of the logo */
+        }
+        .mb-row {
+            margin-bottom: 30px; /* Adjust based on your desired separation */
+        }
+    </style>
+    
     <!-- Skill Start -->
     <div class="container-fluid py-5" id="skill">
         <div class="container">
@@ -196,68 +216,53 @@
                 <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <!-- First Row -->
+                <div class="col-md-4 mb-row">
                     <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Python</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Deep Learning</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Machine Learning</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <h6 class="font-weight-bold skill-name">Python</h6>
+                        <img alt="Skill Logo" src="./img/python-logo-only.png" class="skill-logo">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4 mb-row">
                     <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">DataBase</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <h6 class="font-weight-bold skill-name">Deep Learning</h6>
+                        <img alt="Skill Logo" src="./img/deep-learning-logo.jpg" class="skill-logo">
                     </div>
+                </div>
+                <div class="col-md-4 mb-row">
                     <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Data Analytics</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <h6 class="font-weight-bold skill-name">Machine Learning</h6>
+                        <img alt="Skill Logo" src="./img/Machine-learning-logo-1.png" class="skill-logo">
                     </div>
+                </div>
+    
+                <!-- Second Row -->
+                <div class="col-md-4">
                     <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Data Scientists</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <h6 class="font-weight-bold skill-name">DataBase</h6>
+                        <img alt="Skill Logo" src="./img/istockphoto-1371289759-612x612.jpg" class="skill-logo">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill mb-4">
+                        <h6 class="font-weight-bold skill-name">Data Analytics</h6>
+                        <img alt="Skill Logo" src="./img/flat-design-data-logo-template_23-2149202844.png" class="skill-logo">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill mb-4">
+                        <h6 class="font-weight-bold skill-name">Data Scientists</h6>
+                        <img alt="Skill Logo" src="./img/datascience-1024x511-1.png" class="skill-logo">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Skill End -->
+    
+    
+
+
 
 
     <!-- Services Start -->
@@ -503,7 +508,7 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form name="sentMessage" action="mailto:farshid.ai.dp@gmail.com" id="contactForm" >
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
@@ -586,7 +591,7 @@
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
